@@ -13,34 +13,41 @@
     <!-- First Row -->
     <div class="row">
 
-      <div class="col-md-2">
-        <h1>PLACEHOLDER FOR LOGO</h1>
-      </div>
+		<nav class="navbar navbar-light bg-light">
+		  <a class="navbar-brand">Weather Visualization</a>
 
-      <div class="col-md-6">
-      </div>
+	      <div class="col-md-6">
+	        <!-- Create spacing on top page -->
+	      </div>
 
-      <div class="col-md-4">
 
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Plot 1</a>
-            <a class="dropdown-item" href="#">Plot 2</a>
-            <a class="dropdown-item" href="#">Plot 3</a>
-          </div>
-        </div>
+		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+		    <ul class="navbar-nav">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle col-md-4" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Plots
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						  <a class="dropdown-item" href="#">Plot 1</a>
+						  <a class="dropdown-item" href="#">Plot 2</a>
+						  <a class="dropdown-item" href="#">Plot 3</a>
+						  <a class="dropdown-item" href="#">Plot 4</a>
+					</div>
+				</li>
 
-        <h3>Comparison</h3>
 
-        <h3>Data</h3>
-
-      </div>
-
+				<li class="nav-item">
+					<a class="nav-link col-md-4" href="#">Comparison</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link col-md-4" href="#">Data</a>
+				</li>
+		    </ul>
+		  </div>
+		</nav>
 
     </div>
+    <!-- End of first row -->
 
     <!-- Second Row -->
     <div class="row">
