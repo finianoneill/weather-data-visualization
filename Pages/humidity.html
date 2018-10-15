@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta charset="UTF-8">
+  	<title>Weather Visualization</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  	<!-- Creates the Overall Grid -->
+	<div class="container">
+
+		<!-- First Row -->
+		<div class="row">
+
+		<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+		<nav class="navbar navbar-expand-lg">
+	    	<div class="col">
+      			<a class="navbar-brand" href="index.html">Weather Visualization</a>
+    		</div>
+
+    		<div class="col-10">
+    			<!-- blank space -->
+    		</div>
+			
+    		<div class="col">
+				<div class="dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          	Plots
+		        	</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item" href="temperature.html">Temperature versus Latitude</a>
+						<a class="dropdown-item" href="cloudiness.html">Cloudiness versus Latitude</a>
+						<a class="dropdown-item" href="humidity.html">Humidity versus Latitude</a>
+						<a class="dropdown-item" href="windspeed.html">Windspeed versus Latitude</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col">
+				<a class="nav-link disabled" href="#">Comparison</a>
+			</div>
+
+			<div class="col">
+				<a class="nav-link disabled" href="#">Data</a>
+			</div>
+		</nav>
+
+		</div>
+    	<!-- End of first row -->
+
+		<!-- Second Row -->
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Humidity versus Latitude</h1>
+			</div>
+		</div>
+		<!-- End of Second row -->
+
+		<!--Third Row-->
+		<div class="row">
+			<div class="col-md-12">
+				<img src="../Resources/humidity_vs_latitude.png" class="temp-image">
+				The purpose of this project was to analyze how weather changes the closer one gets to the equator. Data was first pulled from OpenWeatherMap API to compile a dataset spanning over 500 cities.
+
+				After assembling the datset, Matplotlib was used to plot various aspects of the weather versus the latitude. Factors examined included: temperature, cloudiness, wind speed, and humidity. This site contains the source data as well as the visualizations created as part of these analyses. Explanations and descriptions of any trends within the analyses are provided on the appropriate pages.
+
+
+			</div>
+		</div>
+		<!-- End of Third row -->
+
+	</div>
+	<!-- End of grid -->
+
+	<!-- Insert Bootstrap Javascript scripts -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

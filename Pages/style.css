@@ -1,0 +1,17 @@
+.temp-image {
+	float: left;
+	height: 60%;
+	width: 60%;
+}
+
+.viz-image-l {
+	float: left;
+	height: 50%;
+	width: 50%;
+}
+
+.viz-image-r {
+	float: right;
+	height: 50%;
+	width: 50%;
+}
